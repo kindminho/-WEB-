@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+div.lev1 {		
+	position : relative;
+	width: 300px;
+	height: 100px;
+	border: 2px outset #669966;
+	background-color: #ccffcc;		
+}
+
+#container1 {
+	z-index: 1;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+/* 	transform: translate(-50%, -50%);  */
+}
+
+#container1 .lev2 {
+/* 	opacity: 0.9; */
+	position:relative;
+	width: 250px;
+	height:100px;
+	border: 2px outset #990000;
+	background-color: #ffdddd; 
+}
+
+#container2 {
+	z-index: 3;
+	position: absolute;
+	top: 30px;
+	left: 150px;
+}
+
+div#container2 .lev3 {
+	
+	position:relative;
+	width: 200px;
+	border: 2px outset #000099;
+	background-color: #ddddff;	
+/* 	z-index: 2; */
+}
+
+
+
+
+
+
+
+
+
+
+
+

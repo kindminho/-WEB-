@@ -1,0 +1,23 @@
+package com.cosmos.service;
+
+import java.sql.*;
+
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+
+import com.cosmos.dao.*;
+import com.cosmos.dto.*;
+
+
+@Service
+public class CodeServiceImpl implements CodeService {
+
+	@Autowired
+	CodeDao dao;
+	
+	@Override
+	public Code[] getCodeList(String category)  {		
+		return dao.getCodeList(category);
+	}
+
+}
